@@ -1,2 +1,2 @@
 # personal-info
-this is personal info website.
+this is my personal info website.
