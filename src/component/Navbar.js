@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './Navbar.css'
 import {
   Link
 } from "react-router-dom";
@@ -10,7 +11,7 @@ export default function Navbar() {
   };
   return (
     <>
-    <nav className="flex items-center justify-between flex-wrap bg-black p-6">
+    <nav className="flex items-center flex-wrap bg-black p-6 screen-size">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
         <span className="font-semibold text-xl tracking-tight">
           <Link to="/personal-info/home">Personal Info</Link>
@@ -35,9 +36,6 @@ export default function Navbar() {
           <Link to="/personal-info/aboutUs" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-blue">
             About Us
           </Link>
-        </div>
-        <div>
-          <a href="#" className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:text-black hover:bg-white mt-4 lg:mt-0">Download</a>
         </div>
       </div>
     </nav>
