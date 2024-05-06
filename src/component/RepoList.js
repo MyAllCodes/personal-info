@@ -4,7 +4,7 @@ import RepoDetails from './RepoDetails';
 export default function RepoList() {
     const[repoList,setRepoList]=useState([]);
     const headers = {
-        'Authorization': 'token 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'
+        'Authorization': 'token PERSONAL_ACCESS_TOKEN'
       };
     useEffect(()=>{
         axios.get(`https://api.github.com/user/repos?type=public`,{ headers })
