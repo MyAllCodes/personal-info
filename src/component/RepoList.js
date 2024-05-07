@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import RepoDetails from './RepoDetails';
+import token from '../Secret.json';
 export default function RepoList() {
     const[repoList,setRepoList]=useState([]);
     const headers = {
-        'Authorization': 'token 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'
+        'Authorization': 'token '+token.REACT_APP_GITHUB_TOKEN
       };
     useEffect(()=>{
         axios.get(`https://api.github.com/user/repos?type=public`,{ headers })
         .then(res => {
           setRepoList(res.data);
-          console.log("data :"+JSON.stringify(res.data));
         }).catch(error=>{
           console.log("error : "+error);
         })
