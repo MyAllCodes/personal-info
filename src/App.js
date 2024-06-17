@@ -2,7 +2,9 @@ import './App.css';
 import AboutUs from './component/AboutUs';
 import ContactUs from './component/ContactUs';
 import Home from './component/Home';
-import Navbar from './component/Navbar';
+import Header from './component/Header';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -12,9 +14,10 @@ import {
 function App() {
   return (
     <>
-      <Router>
-          {/* <Navbar/> */}
-          <Routes>
+      <Header/>
+        {/* <Router>
+        
+           <Routes>
             <Route
               path="/personal-info/home"
               element={<Home />}
@@ -28,7 +31,7 @@ function App() {
               element={<AboutUs />}
             ></Route>
           </Routes>
-      </Router>
+      </Router>  */}
     </>
   );
 }
