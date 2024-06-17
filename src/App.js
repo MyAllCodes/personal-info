@@ -1,20 +1,23 @@
 import './App.css';
-import AboutUs from './component/AboutUs';
-import ContactUs from './component/ContactUs';
-import Home from './component/Home';
-import Header from './component/Header';
+// import AboutUs from './component/AboutUs';
+// import ContactUs from './component/ContactUs';
+// import Home from './component/Home';
+// import Header from './component/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Routes,
+//   Route
+// } from "react-router-dom";
+import Counter from './component/Counter';
 
 function App() {
+
   return (
     <>
-      <Header/>
+      {/* <Header/> */}
+      <Counter/>
         {/* <Router>
         
            <Routes>
