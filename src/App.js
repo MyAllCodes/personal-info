@@ -2,7 +2,7 @@ import './App.css';
 // import AboutUs from './component/AboutUs';
 // import ContactUs from './component/ContactUs';
 // import Home from './component/Home';
-// import Header from './component/Header';
+import Header from './component/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // import {
@@ -16,8 +16,8 @@ function App() {
 
   return (
     <>
-      {/* <Header/> */}
-      <Counter/>
+      <Header/>
+      {/* <Counter/> */}
         {/* <Router>
         
            <Routes>
